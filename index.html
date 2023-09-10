@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Time Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+<h1>TIME TABLE</h1>
+<body>
+    <div class="table-container">
+    <table id="table">
+        <tr class="time">
+            <th id="TIME">TIME</th>
+            <th contenteditable="true" id="displayValue">9:00 AM - 10:00 AM</th>
+            <th contenteditable="true" id="displayValue">10:00 AM - 11:00 AM</th>
+            <th contenteditable="true" id="displayValue">11:00 AM - 12:00 PM</th>
+            <th contenteditable="true" id="displayValue">12:00 PM - 1:00 PM</th>
+            <th contenteditable="true" id="displayValue">1:00 PM - 2:00 PM</th>
+            <th contenteditable="true" id="displayValue">2:00 PM - 3:00 PM</th>
+            <th contenteditable="true" id="displayValue">3:00 PM - 4:00 PM</th>
+            <th contenteditable="true" id="displayValue">4:00 PM - 5:00 PM</th>
+            <th contenteditable="true" id="displayValue">5:00 PM - 6:00 PM</th>
+            
+         <tbody>
+        </tr>
+
+        <tr >
+            <td class="days" contenteditable="true" id="displayValue">Monday</td>
+            <td class="chem" contenteditable="true" id="displayValue">Chemistry</td>
+            <td class="bee" contenteditable="true" id="displayValue">BEE</td>
+            <td class="eng" contenteditable="true" id="displayValue">English</td>
+            <td contenteditable="true" id="displayValue" ></td>
+            <td colspan="2" class="pee" contenteditable="true" id="displayValue">PEE Practical</td>
+            <td contenteditable="true" id="displayValue" ></td>
+            <td colspan="2" class="eng" contenteditable="true" id="displayValue">English Practical</td>
+            <td><button class="btn btn-danger" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr >
+            <td class="days" contenteditable="true" id="displayValue">Tuesday</td>
+            <td class="pee" contenteditable="true" id="displayValue">PEE</td>
+            <td class="math" contenteditable="true" id="displayValue">Mathematics-I</td>
+            <td class="eng" contenteditable="true" id="displayValue">English</td>
+            <td id="displayValue" contenteditable="true" ></td>
+            <td colspan="2" class="chem" contenteditable="true" id="displayValue">Chemistry Practical</td>
+            <td id="displayValue" contenteditable="true" ></td>
+            <td id="displayValue" contenteditable="true" ></td>
+            <td id="displayValue" contenteditable="true" ></td>
+            <td><button class="btn btn-danger" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr >
+            <td class="days" contenteditable="true" id="displayValue">Wednesday</td>
+            <td class="bee" contenteditable="true" id="displayValue">BEE</td>
+            <td class="chem" contenteditable="true" id="displayValue">Chemistry</td>
+            <td class="eng" contenteditable="true" id="displayValue">English</td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td class="pee" contenteditable="true" id="displayValue">PEE</td>
+            <td class="math" contenteditable="true" id="displayValue">Mathematics-I</td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td><button class="btn btn-danger" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr >
+            <td class="days" contenteditable="true" id="displayValue">Thursday</td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td colspan="2" class="bee" contenteditable="true" id="displayValue">BEE Practical</td>
+            <td class="bee" contenteditable="true" id="displayValue">BEE</td>
+            <td class="chem" contenteditable="true" id="displayValue">Chemistry</td>
+            <td><button class="btn btn-danger" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr >
+            <td class="days" contenteditable="true" id="displayValue">Friday</td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td contenteditable="true" id="displayValue"></td>
+            <td colspan="2" class="math" contenteditable="true" id="displayValue">Mathematics-I Tutorial</td>
+            <td class="math" contenteditable="true" id="displayValue">Mathematics-I</td>
+            <td class="pee" contenteditable="true" id="displayValue">PEE</td>
+            <td><button class="btn btn-danger" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </tbody>   
+
+
+    </table>
+
+    <button class="btn" onclick="addRow()">Add Row</button>
+    </div>
+
+    
+</body>
+</html>

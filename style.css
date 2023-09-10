@@ -1,0 +1,81 @@
+*{
+    font-family: "Gill Sans", sans-serif;
+}
+
+#table{
+    text-align: center;
+    margin: 0 auto;
+}
+
+table, td, th{
+    border: 1px brown solid;
+    border-radius: 5px;
+    align-self: center;
+}
+
+h1{
+    text-decoration: underline;
+    color:chocolate
+}
+
+
+.time{
+    background-color: rgb(236, 172, 172);
+}
+
+*{
+    text-align: center;
+}
+
+.chem{
+    background-color: rgb(212, 188, 235);
+}
+
+.chem:hover{
+    box-shadow: 10px 2px 10px 2px;
+}
+
+.pee{
+    background-color: rgb(149, 180, 234);
+}
+
+.pee:hover{
+    box-shadow: 10px 2px 10px 2px;
+}
+
+.bee{
+    background-color: rgb(237, 152, 95);
+}
+
+.bee:hover{
+    box-shadow: 10px 2px 10px 2px;
+}
+
+.eng{
+    background-color: rgb(232, 152, 197);
+}
+
+.eng:hover{
+    box-shadow: 10px 2px 10px 2px;
+}
+
+.math{
+    background-color: rgb(116, 231, 171);
+}
+
+.math:hover{
+    box-shadow: 10px 2px 10px 2px;
+}
+
+.days{
+    background-color: beige;
+}
+
+td{
+    height:60px;
+}
+
+
+div{
+    align-content: center;
+}
